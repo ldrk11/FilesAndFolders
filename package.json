@@ -1,0 +1,9 @@
+{
+  "name": "filesandfolders",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "ldrk11",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
