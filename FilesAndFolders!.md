@@ -23,8 +23,8 @@ Esolang that takes in input of a folder that has folders and files in it (which 
 |Multiply|Pop and Multiply top 2 values on stack and sets the working value to the result|0|
 |Divide|Pop and Divide top 2 values on stack and sets the working value to the result|0|
 |Modulo|Pop and Modulo top 2 values on stack and sets the working value to the result|0|
-|IfSkip|Skips past the next command unless the working value is negitave or 0|0|
-|If|Runs code inside folder unless the working value is negitave or 0|0|
+|IfSkip|Skips past the next command unless the working value is negitave or 0|Infinite|
+|If|Runs code inside folder unless the working value is negitave or 0|Infinite|
 |Goto|Gets the number in the file then goes to the folder/file with that number|1|
 |End|Ends program|0|
 |SetValueStr|Sets working value to the file (As string)|1|
