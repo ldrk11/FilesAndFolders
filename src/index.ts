@@ -67,7 +67,10 @@ function runCode(folders: any, root: any){
                     workingValue = parseInt(sub[0])
                     break
                 case "Print":
-                    console.log(workingValue)
+                    process.stdout.write(String(workingValue))
+                    break
+                case "NewLine":
+                    process.stdout.write("\n")
                     break
                 case "Input":
                     workingValue = readlineSync.question("")
@@ -110,7 +113,7 @@ function runCode(folders: any, root: any){
                     stack.push(workingValue)
                     break
                 case "PrintAscii":
-                    console.log(String.fromCharCode(workingValue))
+                    process.stdout.write(String.fromCharCode(workingValue))
                     break
                 case "Add":
                     workingValue = stack.pop() + stack.pop()
