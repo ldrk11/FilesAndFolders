@@ -13,17 +13,6 @@ if (!fs.existsSync(programLocation)){
     process.exit(1)
 }
 
-function removeStartAndEndSlash(string: string){
-    let newString = path.normalize(string)
-    if (newString.startsWith(path.sep)){
-        newString = newString.substring(1,newString.length)
-    }
-    if (newString.endsWith(path.sep)){
-        newString = newString.substring(0,newString.length-1)
-    }
-    return newString
-}
-
 function unnumber(string: string){
     let numberStop
     let i = 0
@@ -149,7 +138,3 @@ function runCode(folders: any, root: any){
 }
 
 runCode(folders, programLocation)
-
-// (async () => {
-//     await runCode(folders)
-// })()
