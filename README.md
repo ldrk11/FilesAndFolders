@@ -4,6 +4,10 @@ You can find the [esolangs.org](https://esolangs.org) page [here.](https://esola
 
 To learn how to use the language go here [FilesAndFolders!.md](FilesAndFolders!.md).
 
+Install Modules:
+```
+npm install
+```
 Compile typescript:
 ```
 tsc
