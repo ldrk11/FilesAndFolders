@@ -48,12 +48,10 @@ function runCode(folders: any, root: any){
             const command = folders[i]
             switch (unnumber(command)){
                 case "SetValueStr":
-                    var sub = fs.readdirSync(path.join(root, command)).sort()
-                    workingValue = sub[0]
+                    workingValue = fs.readdirSync(path.join(root, command)).sort()[0]
                     break
-                case "SetValueNum":
-                    var sub = fs.readdirSync(path.join(root, command)).sort()
-                    workingValue = parseInt(sub[0])
+                case "SetValueNum": 
+                    workingValue = parseInt(fs.readdirSync(path.join(root, command)).sort()[0])
                     break
                 case "Print":
                     process.stdout.write(String(workingValue))
