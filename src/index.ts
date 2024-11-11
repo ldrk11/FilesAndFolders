@@ -141,9 +141,7 @@ function runCode(folders: any, root: any){
             }
         }
     } catch (e) {
-        if (e == CommandNotFoundError){
-            console.error(e)
-        }
+        console.error(e)
     }
 }
 
