@@ -17,8 +17,7 @@ function unnumber(string: string){
     let numberStop
     let i = 0
     for (const char of string){
-        let isNumber = parseInt(char).toString() == char
-        if (!numberStop && !isNumber){
+        if (!numberStop && !(parseInt(char).toString() == char)){
             numberStop = i
             break
         }
