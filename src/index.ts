@@ -23,7 +23,7 @@ function unnumber(string: string){
         }
         i++
     }
-    if (!numberStop) { return undefined }
+    if (!numberStop) { return string }
     return string.substring(numberStop, string.length)
 }
 
