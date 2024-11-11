@@ -62,7 +62,7 @@ function runCode(folders: any, root: any){
                     var sub = fs.readdirSync(path.join(root, command)).sort()
                     workingValue = sub[0]
                     break
-                case "SetValueInt":
+                case "SetValueNum":
                     var sub = fs.readdirSync(path.join(root, command)).sort()
                     workingValue = parseInt(sub[0])
                     break
